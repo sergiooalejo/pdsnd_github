@@ -7,6 +7,9 @@ Bikeshare Data, 3 United States cities.
 ### Description
 A brief exploration data related to bike share systems for three major cities in the United States
 
+### Steps
+This script you will be able to write City, then month and then date to see the most important information about bikeshare data in your selections.
+
 ### Files used
 1-bikeshare.py
 
