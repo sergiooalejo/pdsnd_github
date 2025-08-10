@@ -25,13 +25,13 @@ def get_filters():
         else:
             print("Invalid input. Please enter a valid input")
     # TO DO: get user input for month (all, january, february, ... , june)
-    while True:
-        month = input("Please enter the name of a month from January to June to analyze, or type 'all' to include all months:")
-        month = month.lower()
-        if month in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
-            break
-        else: 
-            print("Invalid input. Please enter a valid input")
+    valid_months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+
+    month = ''
+    while month not in valid_months:
+        month = input("Please enter the name of a month from January to June to analyze, or type 'all' to include all months:").lower()
+        if month not in valid_months:
+            print("Invalid input. Please enter a valid input.")
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
